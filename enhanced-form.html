@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial- scale= 1.0">
+    <title>Enhanced HTML Form</title>
+    <style>
+        body{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            margin: 8px;
+            background-color: rgb(152, 146, 150);
+        }
+        header, main, footer{
+            max-width: 800px;
+            margin: auto;
+            background: rgb(255, 255, 255);
+            padding: 12px;
+            border-radius: 8px;
+        }
+        h1,h2{
+            color: rgb(0, 0, 0);
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td{
+            padding: 8px;
+            border: 1px solid#050505;
+        }
+        th{
+            background-color: rgb(255, 255, 255);
+        }
+        form{
+            display: grid;
+            gap: 15px;
+        }
+        label{
+            font-weight: bold;
+        }
+        input, select, textarea, button{
+            padding: 8px;
+            font-size: 1rem;
+            border: 1px #050505;
+            border-radius: 5px;
+        }
+        button{
+            background: antiquewhite;
+            color: rgb(0, 0, 0);
+            border: none;
+            cursor: pointer;
+        }
+        button :hover{
+            background: antiquewhite;
+        }
+        img,video{
+            max-width: 100%;
+            border: radius 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Event Registration</h1>
+    <p>Welcome! Please fill out the form below to register for our event.</p>
+</header>
+<main>
+    <section>
+        <h2>Event Highlight</h2>
+        <ul>
+            <li>Networking opportunities</li>
+            <li>Workshops by Industry Experts</li>
+            <li>Free resources and giveaways</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Schedule</h2>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+            </tr>
+            <tr>
+                <td>09:00am</td>
+                <td>Opening Ceremony</td>
+            </tr>
+            <tr>
+                <td>10:00am</td>
+                <td>Workshop: Future of Technology</td>
+            </tr>
+            <tr>
+                <td>01:00pm</td>
+                <td>Networking Lunch</td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h2>Event Preview</h2>
+        <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Event banner" alt="Event Banner">
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support video
+        </video>
+        </section>
+        <section>
+            <form action="#" method="post" autocomplete="on">
+            <div>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter Your fullname" required>
+            </div>
+            <div>
+                <label for="contacts">Contact Information:</label>
+                <input type="text" id="contacts" name="contacts" placeholder="+254711111111" required>
+            </div>
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="text" id="email" name="email" placeholder="johndoe@email.com"required>
+            </div>
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div>
+                <label for="Gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">--Select--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="prefer_not">Prefer not to say</option>
+                </select>
+            </div>
+            <div>
+                <label>Interests:</label><br>
+                <input type="checkbox" id="tech" name="interests" value="tech">
+                <label for="tech">Technology</label>
+                <input type="checkbox" id="business" name="interests" value="business">
+                <label for="business">Business</label>
+                <input type="checkbox" id="art" name="interests" value="art">
+                <label for="art">Art</label>
+            </div>
+            <div>
+                <label>Meal Preference:</label><br>
+                <input type="radio" id="veg" name="Meal" value="veg">
+                <label for="veg">Vegetarian</label>
+                <input type="radio" id="nonveg" name="meal" value="nonveg" required>
+                <label for="nonveg">Non-Vegetarian</label>
+            </div>
+            <div>
+                <label for="ticket">Ticket Type:</label>
+                <input type="text" id="ticket" value="StandardPass" readonly>    
+            </div>
+            <div>
+                <label for="comments">Additional Comments:</label>
+                <textarea id="Comments" name="comments" placeholder="Write any special requests here..."></textarea>
+            </div>
+            <button type="submit">Submit Registration</button>
+        </form>
+    </section>           
+</main>
+<footer>
+    <p>&copy; 2025 Event Company. All rights reserved.</p>
+</footer>   
+</body>
+</html>
